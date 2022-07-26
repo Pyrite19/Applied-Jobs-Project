@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/styles.css">
-    <script src="../public/js/main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="pageContainer">
+      <div class="header">
+        <h2>
+          This is just a little site that tracks my applications and shows what
+          I've made all in one.
+        </h2>
+      </div>
+      <div class="body">
+        <form action="/addJob" method="POST">
+          <input type="text" placeholder="Job" name="jobItem" />
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

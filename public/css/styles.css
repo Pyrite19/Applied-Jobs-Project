@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.pageContainer {
+display: flex;
+flex-direction: column;
+}
+
+.header {
+    background-color:rgb(45, 45, 65);
+    color: aliceblue;
+}
