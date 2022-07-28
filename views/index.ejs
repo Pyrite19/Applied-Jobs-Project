@@ -20,16 +20,18 @@
         <div class="right-head"></div>
       </div>
       <div class="body">
-        <form action="/addJob" method="POST">
-          <input type="text" placeholder="Job" name="jobItem" />
-          <input type="submit" />
-        </form>
+        <div class="jobInput">
+          <form action="/addJob" method="POST">
+            <input type="text" placeholder="Job" name="jobItem" />
+            <input type="submit" />
+          </form>
+        </div>
         <div class="jobContainer">
           <h2>Applied Jobs List</h2>
           <ul class="jobList">
             <% for(let i=0; i < job.length; i++) {%>
             <li class="job">
-              <span><%= job[i].job %></span><span class="delete">delete</span>
+              <span class="jobLabel"><%= job[i].job %></span><span class="monthLabel"><%= job[i].dateMonth %></span> -  <span class="dayLabel"><%= job[i].dateDay %></span> - <span class="yearLabel"><%= job[i].dateYear %></span><span class="delete">delete</span>
             </li>
             <% } %>
           </ul>

@@ -26,7 +26,7 @@ app.get("/", async (req, res) => {
 })
 
 app.post('/addJob', (req, res) => {
-    db.collection('jobBase').insertOne({ job: req.body.jobItem, date: date.getDate() })
+    db.collection('jobBase').insertOne({ job: req.body.jobItem, dateDay: date.getDate(), dateMonth: date.getMonth(), dateYear: date.getFullYear() })
         .then(result => {
             console.log('Job Added')
             res.redirect('/')
@@ -34,6 +34,15 @@ app.post('/addJob', (req, res) => {
         .catch(error => console.error(error))
 })
 
+app.delete('/deleteItem', (req, res) => {
+    db.collection('jobBase').deleteOne({ job: req.body.jobFromJS })
+        .then(result => {
+            console.log('Job Deleted')
+            res.json('Job Deleted')
+        })
+        .catch(error => console.error(error))
+
+})
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
