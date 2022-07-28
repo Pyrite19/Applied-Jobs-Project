@@ -50,17 +50,20 @@ table {
 }
 
 /* CSS Reset End */
-h1 {
-	font-size: 32px;
-}
 
 h2 {
 	font-size: 26px;
 }
 
+h4 {
+	font-size: 18px;
+}
+
 .pageContainer {
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -69,11 +72,11 @@ h2 {
 	min-height: 150px;
 	background-color: rgb(45, 45, 65);
 	color: aliceblue;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: bolder;
 }
 
 .left-head {
+	padding: 2.5%;
 	display: flex;
 	align-items: center;
 }
@@ -88,7 +91,6 @@ h2 {
 	border-style: solid;
 	border-color: gray;
 	border-radius: 16px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .job {
@@ -107,4 +109,14 @@ h2 {
 .delete {
 	color: red;
 	margin: 0px 15px;
+}
+
+.footer {
+	background-color: rgb(71, 71, 71);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	min-height: 100px;
+	color: white;
 }

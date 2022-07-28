@@ -12,10 +12,9 @@
     <div class="pageContainer">
       <div class="header">
         <div class="left-head">
-          <h2>
-            This is just a little site that tracks my applications and shows
-            what I've made all in one.
-          </h2>
+          <h4>
+            Job Application Tracker
+          </h4>
         </div>
         <div class="right-head"></div>
       </div>
@@ -31,11 +30,19 @@
           <ul class="jobList">
             <% for(let i=0; i < job.length; i++) {%>
             <li class="job">
-              <span class="jobLabel"><%= job[i].job %></span><span class="monthLabel"><%= job[i].dateMonth %></span> -  <span class="dayLabel"><%= job[i].dateDay %></span> - <span class="yearLabel"><%= job[i].dateYear %></span><span class="delete">delete</span>
+              <span class="jobLabel"><%= job[i].job %></span>
+              <span class="monthLabel"><%= job[i].dateMonth %></span> -
+              <span class="dayLabel"><%= job[i].dateDay %></span> -
+              <span class="yearLabel"><%= job[i].dateYear %></span>
+              <span class="delete">delete</span>
             </li>
             <% } %>
           </ul>
         </div>
+      </div>
+      <div class="footer">
+        <p>Made using Express, EJS, and MongoDB.</p>
+        <p>Contact: timd1919@gmail.com</p>
       </div>
     </div>
   </body>
