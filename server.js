@@ -43,7 +43,7 @@ app.delete('/deleteItem', (req, res) => {
         .catch(error => console.error(error))
 
 })
-}
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
