@@ -59,6 +59,10 @@ h4 {
 	font-size: 18px;
 }
 
+h5 {
+	font-size: 16px;
+}
+
 .pageContainer {
 	min-height: 100vh;
 	display: flex;
@@ -81,11 +85,12 @@ h4 {
 	align-items: center;
 }
 
-.jobInput {
-	margin: 2.5% 2.5%;
+.body{
+	flex: 1 1 auto;
 }
 
 .jobContainer {
+	margin: 5px 10px 5px 10px;
 	padding: 5px 0px 5px 5px;
 	border-width: 1px;
 	border-style: solid;
@@ -95,11 +100,18 @@ h4 {
 
 .job {
 	margin: 10px 5px 0px 5px;
-	padding: 5px 0px 5px 5px;
+	padding: 5px 0px 5px 10px;
 	border-width: 2px;
 	border-style: solid;
 	border-color: gray;
 	border-radius: 16px;
+}
+
+.jobInput {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin: 1% 1%;
 }
 
 .monthLabel {

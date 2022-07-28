@@ -19,12 +19,6 @@
         <div class="right-head"></div>
       </div>
       <div class="body">
-        <div class="jobInput">
-          <form action="/addJob" method="POST">
-            <input type="text" placeholder="Job" name="jobItem" />
-            <input type="submit" />
-          </form>
-        </div>
         <div class="jobContainer">
           <h2>Applied Jobs List</h2>
           <ul class="jobList">
@@ -38,6 +32,13 @@
             </li>
             <% } %>
           </ul>
+          <div class="jobInput">
+            <h5>Input new job below!</h5>
+            <form action="/addJob" method="POST">
+              <input type="text" placeholder="Job" name="jobItem" />
+              <input type="submit" />
+            </form>
+          </div>
         </div>
       </div>
       <div class="footer">
