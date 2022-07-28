@@ -10,7 +10,7 @@ app.use(express.json())
 
 let db,
     dbConnectionStr = process.env.DB_STRING,
-    dbName = 'jobBase'
+    dbName = 'JobBase'
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     .then(client => {
