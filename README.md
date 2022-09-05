@@ -1,4 +1,1 @@
-# Applied-Jobs-Project
-Feature complete!  
-https://jobapplicationapp19.herokuapp.com/
-Anyone can add to this in this proof of concept. Sorry if anything weird gets there!
+Live preview is closed for now. Feel free to clone and test this project locally!
