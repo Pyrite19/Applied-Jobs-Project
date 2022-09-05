@@ -26,7 +26,7 @@ app.get("/", async (req, res) => {
 })
 
 app.post('/addJob', (req, res) => {
-    db.collection('jobBase').insertOne({ job: req.body.jobItem, dateDay: date.getDate(), dateMonth: date.getMonth(), dateYear: date.getFullYear() })
+    db.collection('jobBase').insertOne({ job: req.body.jobItem, dateDay: (date.getDate() + 1), dateMonth: date.getMonth(), dateYear: date.getFullYear() })
         .then(result => {
             console.log('Job Added')
             res.redirect('/')
